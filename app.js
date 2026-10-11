@@ -2,7 +2,7 @@
 'use strict';
 
 // Cellmoney Trade
-// Copyright (c) 2026 Bhushan Maya.
+// Copyright (c) 2026 Buison Maiya.
 // All rights reserved.
 
 const AGENT = '67578423441';
