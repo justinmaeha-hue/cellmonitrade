@@ -185,3 +185,55 @@ small { color: #56677d; }
     grid-template-columns: repeat(4,minmax(0,1fr));
   }
 }
+
+/* CELLMONEY TRADE - WEBSITE WALLPAPER */
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.10),
+      rgba(255, 255, 255, 0.10)
+    ),
+    url("1000209911.png");
+
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Transparent cards with readable text */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Header allows wallpaper to show through */
+header {
+  background: rgba(5, 35, 95, 0.82);
+  backdrop-filter: blur(5px);
+}
+
+/* Navigation */
+nav {
+  background: rgba(5, 35, 95, 0.95);
+}
+
+/* Footer */
+footer {
+  background: rgba(5, 35, 95, 0.90);
+}
+
+/* Mobile wallpaper compatibility */
+@media (max-width: 650px) {
+  body {
+    background-attachment: scroll;
+    background-position: center top;
+  }
+}
