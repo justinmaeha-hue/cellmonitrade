@@ -1,0 +1,144 @@
+
+:root {
+  font-family: Arial, sans-serif;
+  color: #142b47;
+  background: #edf3fb;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+
+header {
+  text-align: center;
+  color: white;
+  background: linear-gradient(135deg,#062c6c,#0879ed);
+  padding: 40px 18px;
+}
+header p { color: #e2edff; }
+
+.logo {
+  width: 82px;
+  height: 82px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: white;
+  color: #0754b8;
+  font-size: 30px;
+  font-weight: bold;
+  margin: auto;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #052e6a;
+  padding: 14px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 9px;
+}
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 15px;
+}
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 15px;
+  margin: 17px 0;
+  box-shadow: 0 4px 15px #10396316;
+}
+h2 { color: #0754b8; }
+
+.notice, .summary {
+  background: #eaf3ff;
+  padding: 15px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+.summary p { margin: 7px 0; }
+
+.prices {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 9px;
+}
+.price {
+  border: 2px solid #d9e5f5;
+  background: #f7faff;
+  border-radius: 10px;
+  padding: 13px 5px;
+  cursor: pointer;
+  color: #173c6b;
+}
+.price strong {
+  display: block;
+  font-size: 19px;
+}
+.price small {
+  display: block;
+  margin-top: 5px;
+}
+.price.active {
+  border-color: #0754b8;
+  background: #dcecff;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 16px;
+}
+input, select {
+  display: block;
+  width: 100%;
+  font: inherit;
+  padding: 13px;
+  border: 1px solid #b9cce2;
+  border-radius: 8px;
+  margin-top: 7px;
+}
+button, .button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #0754b8;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 14px;
+}
+.green { background: #167e4c; }
+.outline {
+  background: #e7f0ff;
+  color: #0754b8;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid #ffb100;
+  outline-offset: 2px;
+}
+footer {
+  text-align: center;
+  background: #052e6a;
+  color: white;
+  padding: 25px;
+}
+small { color: #56677d; }
+
+@media(min-width:650px) {
+  .prices {
+    grid-template-columns: repeat(4,minmax(0,1fr));
+  }
+}
