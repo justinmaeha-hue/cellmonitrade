@@ -30,9 +30,9 @@ confirmation and verification.
 
 ## Ownership
 Project: Cellmoney Trade
-Owner: Bhushan Maya
+Owner: Buison Maiya
 
-Copyright (c) 2026 Bhushan Maya.
+Copyright (c) 2026 Buison Maiya.
 All Rights Reserved.
 
 See LICENSE for reuse restrictions.
