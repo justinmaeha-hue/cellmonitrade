@@ -1,2 +1,0 @@
-# cellmonitrade
-CELLMONI TRADE

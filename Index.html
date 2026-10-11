@@ -1,0 +1,157 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0754b8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy"
+content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Cellmoney Trade | Mobile Top-Ups</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">CT</div>
+  <h1>Cellmoney Trade</h1>
+  <p>Digital Mobile Top-Up Services</p>
+  <p>Papua New Guinea</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#order">Buy Top-Up</a>
+  <a href="#payment">Payment</a>
+  <a href="#contact">Agent</a>
+</nav>
+
+<main>
+<section class="card" id="home">
+  <h2>Welcome to Cellmoney Trade</h2>
+  <p>
+    Select your mobile top-up amount,
+    contact our agent and confirm your order
+    before making payment.
+  </p>
+  <p class="notice">
+    Never share your bank password, PIN or OTP.
+    All orders are verified manually.
+  </p>
+</section>
+
+<section class="card" id="order">
+  <h2>Buy Mobile Top-Up</h2>
+  <p>Choose K5 to K200. Service fee: 10%.</p>
+
+  <div class="prices" id="prices"></div>
+
+  <label for="network">Select Network</label>
+  <select id="network">
+    <option value="">Choose Network</option>
+    <option>Digicel</option>
+    <option>Vodafone</option>
+    <option>Telikom</option>
+  </select>
+
+  <label for="phone">Customer Phone Number</label>
+  <input id="phone" type="tel"
+    placeholder="7XXXXXXX"
+    maxlength="12">
+
+  <div class="summary">
+    <p>Top-Up: <strong id="value">K0.00</strong></p>
+    <p>Service Fee: <strong id="fee">K0.00</strong></p>
+    <p>Total: <strong id="total">K0.00</strong></p>
+  </div>
+
+  <button id="orderBtn">
+    Order Through WhatsApp
+  </button>
+</section>
+
+<section class="card" id="payment">
+  <h2>BSP Payment Information</h2>
+  <p>
+    Confirm your order with the agent
+    before making payment.
+  </p>
+
+  <div class="summary">
+    <p><b>Bank:</b> BSP Financial Group</p>
+    <p><b>Account Name:</b> Bhushan Maya</p>
+    <p><b>Account Number:</b>
+      <span id="account">0001466960</span>
+    </p>
+  </div>
+
+  <button id="copyBtn" class="outline">
+    Copy BSP Account Number
+  </button>
+  <p id="copyStatus" role="status"></p>
+</section>
+
+<section class="card">
+  <h2>Share Payment Screenshot</h2>
+  <p>
+    Select your payment receipt and share it
+    with our agent through WhatsApp.
+  </p>
+
+  <label for="receipt">Select Screenshot</label>
+  <input id="receipt" type="file"
+    accept="image/png,image/jpeg,image/webp">
+
+  <button id="receiptBtn" class="green">
+    Share Screenshot
+  </button>
+
+  <p id="receiptStatus" role="status"></p>
+  <small>
+    If direct sharing is unavailable,
+    attach your screenshot manually in WhatsApp.
+    Screenshots are not stored by this website.
+  </small>
+</section>
+
+<section class="card" id="contact">
+  <h2>Contact Agent</h2>
+  <p><b>Business:</b> Cellmoney Trade</p>
+  <p><b>Agent:</b> Bhushan Maya</p>
+  <p><b>Phone:</b> +675 7842 3441</p>
+
+  <a class="button green"
+    href="https://wa.me/67578423441"
+    target="_blank"
+    rel="noopener noreferrer">
+    Contact Agent on WhatsApp
+  </a>
+
+  <a class="button outline"
+    href="tel:+67578423441">
+    Call Agent
+  </a>
+</section>
+
+<section class="card">
+  <h2>Customer Notice</h2>
+  <p>
+    Cellmoney Trade is an independent
+    order-request website, not an official
+    mobile network or CellMoni website.
+    Top-ups are subject to availability.
+    Payments and orders are manually verified.
+  </p>
+</section>
+</main>
+
+<footer>
+  © 2026 Cellmoney Trade.
+  Bhushan Maya. All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
