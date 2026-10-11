@@ -68,6 +68,49 @@ h2 { color: #0754b8; }
   grid-template-columns: repeat(2,minmax(0,1fr));
   gap: 9px;
 }
+
+/* Full website wallpaper */
+body {
+  background-image:
+    linear-gradient(
+      rgba(0, 15, 45, 0.55),
+      rgba(0, 15, 45, 0.55)
+    ),
+    url("1779490161340.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Profile at top-left */
+.top-profile {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+  color: white;
+  font-weight: bold;
+}
+
+.top-profile img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+/* Transparent content cards */
+.card {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+}
 .price {
   border: 2px solid #d9e5f5;
   background: #f7faff;
